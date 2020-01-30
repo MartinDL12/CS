@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'upl%9ms*&#n6)^_$lc_yf4(*jkty0f@(h)vv-2wnej7le^g#de'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','54.174.102.62']
+ALLOWED_HOSTS = ['localhost','18.209.168.94']
 
 
 # Application definition
@@ -78,7 +78,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'martindb',
         'USER':'postgres',
-        'HOST': 'martindb.ckuzxcuqfm1z.us-east-1.rds.amazonaws.com',
+        'HOST': 'database-1.cyhf2zbwkgc5.us-east-1.rds.amazonaws.com',
         'PASSWORD':'cubosrubik',
         'PORT': 5432
     }
