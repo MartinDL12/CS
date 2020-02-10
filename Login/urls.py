@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from Login.views import CustonAuthToken
 from Login import views
 urlpatterns = [
-    re_path(r'^', CustonAuthToken.as_view()),
+    re_path(r'login/$', CustonAuthToken.as_view()),
     re_path(r'example_lista2/$', views.ExampleList2.as_view())
 #Hola soy roberto
 ]
