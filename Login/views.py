@@ -16,7 +16,7 @@ from Login.serializer import Example2Serializers
 
 class ExampleList2(APIView):
     def get(self, request, format=None):
-        print("metodo get filter")
+        print("Metodo get filter")
         queryset= Example2.objects.filter(delete = False)
         serializer= Example2Serializers(queryset, many=True)
         return Response(serializer.data)
@@ -25,7 +25,7 @@ class ExampleList2(APIView):
         serializer = Example2Serializers(data= request.data)
         if serializer.is_valid():
             serializer.save()
-            datas = serializer.data()
+            datas = serializer.data
             return Response(datas)
         return Response(serializer.errors, status= status.HTTP_400_BAD_REQUEST)
 
