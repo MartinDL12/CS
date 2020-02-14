@@ -39,7 +39,9 @@ INSTALLED_APPS = [
 'django.contrib.staticfiles',
 'rest_framework',
 'rest_framework.authtoken',
-'Login'
+'Login',
+
+'Profile2'
 ]
 
 SITE_ID = 1
